@@ -1,6 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".ActivityMain">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityMain">
+    <item android:id="@+id/action_technical_specs"
+        android:title="Technical Specs"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/action_gallery"
+        android:title="Gallery"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+    <item android:id="@+id/action_features" android:title="Features"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_slideshow"/>
 </menu>

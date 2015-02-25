@@ -1,17 +1,30 @@
 package com.lingoware.tarea1;
 
+import android.os.PersistableBundle;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.lang.reflect.Method;
 
 public class ActivityMain extends ActionBarActivity {
 
+    private String TAG = "Test";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_activity_main);
+
         if (savedInstanceState == null) {
             FragmentTransaction txn = getSupportFragmentManager().beginTransaction();
             txn.add(R.id.container, new DetailsFragment());
@@ -20,6 +33,13 @@ public class ActivityMain extends ActionBarActivity {
         }
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ((DetailsFragment)getSupportFragmentManager().findFragmentById(R.id.container)).loadDetails(0);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,12 +55,32 @@ public class ActivityMain extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu)
+    {
+        if(featureId == Window.FEATURE_ACTION_BAR && menu != null){
+            if(menu.getClass().getSimpleName().equals("MenuBuilder")){
+                try{
+                    Method m = menu.getClass().getDeclaredMethod(
+                            "setOptionalIconsVisible", Boolean.TYPE);
+                    m.setAccessible(true);
+                    m.invoke(menu, true);
+                }
+                catch(NoSuchMethodException e){
+                    Log.e(TAG, "onMenuOpened", e);
+                }
+                catch(Exception e){
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+        return super.onMenuOpened(featureId, menu);
+    }
+
+    public void navigationOptionClicked(View v){
+
+    }
 }

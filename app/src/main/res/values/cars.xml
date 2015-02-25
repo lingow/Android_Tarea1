@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_names">
+        <item>Porsche 911</item>
+        <item>Porsche Boxster</item>
+        <item>Porsche Cayman</item>
+        <item>Porsche Cayenne</item>
+    </string-array>
+    <string-array name="car_images">
+        <item>@drawable/porsche_911</item>
+        <item>@drawable/porsche_boxter</item>
+        <item>@drawable/porsche_cayman</item>
+        <item>@drawable/porsche_cayene</item>
+    </string-array>
+
+    <integer-array name="car_ratings">
+        <item>8</item>
+        <item>7</item>
+        <item>9</item>
+        <item>6</item>
+    </integer-array>
+
+    <string-array name="car_text">
+        <item>The 911. Our identity. A truly distinctive design. Technology that was born on the race track. Emotional impact that has been standard since 1963. Yet, is that enough to move forward? Don’t we need to break the stranglehold of tradition once in a while before it one day brings us to a complete standstill? We believe that the answer is ‘yes’, which is why no fewer than 90% of the components of the 911 are either new or have been fundamentally revised. This is our approach to the preservation of tradition and it is precisely how we do justice to the 911 legend.</item>
+        <item>De acuerdo, la vida virtual ofrece una gran diversión. Pero no permite recorrer curvas sintiendo el viento en la piel. El Boxster celebra la vida real. En forma de clásico de diseño. En forma de potente deportivo de motor central. En forma de roadster de pura raza. También existen muchas posibilidades de citarlo por su nombre. Nombre al que ya han hecho honor famosos predecesores como, por ejemplo, el 356 Nr. 1 o el 550 Spyder.
+Nos planteábamos la cuestión acerca de cómo lo lograría en el futuro. Naturalmente, también se trataba de combinar armónicamente entre sí diseño y funcionalidad, tradición e innovación. Pero, ¿qué es armonía? ¿Algo simpático? ¿Blando? ¿Suave? En absoluto.
+Por este motivo, hemos agudizado claramente nuestra idea de un roadster. La hemos afilado. Y le hemos prestado una expresión totalmente nueva.
+Con más prestaciones, pero también más eficiencia. Con tecnologías innovadoras. Con arquitectura ligera inteligente. Con un diseño exterior e interior deportivamente adaptados entre sí. Y con esquinas y bordes donde han de estar. Y donde ofrecen su mejor cara.
+El espíritu del roadster puro está vivo. Es más independiente que nunca. Más enérgico, irrefrenable e intenso que nunca.</item>
+        <item>Es la hora de un deportivo que hace de la curva su ley y reinterpreta completamente la fascinación por el automovilismo deportivo: un convincente concepto de motor central, con un centro de gravedad bajo y centrado que proporciona una sensación de conducción precisa y directa. Con mayores prestaciones y una mayor eficiencia, con una capacidad de giro y una tracción no alcanzadas hasta ahora. Con innovadoras tecnologías y una arquitectura ligera inteligente que proporcionan una optimizada relación peso-potencia. Con un chasis que traslada la potencia a la carretera, especialmente en la curva. Con un diseño inconfundible que exige más con cada una de sus líneas y cada una de sus aristas.
+Los modelos Cayman. Construidos libremente acordes a nuestra voluntad; y a la ley de la curva.</item>
+        <item>Tanto por fuera como por dentro, este vehículo transmite sobre todo una cosa: entusiasmo. Por la vida, por la carretera.
+El frontal personifica el concepto de dinámica, evidente en la nueva forma del capó del motor y en las marcadas aletas deportivas. Igualmente nuevo es el diseño aún más preciso de los faros Bi-Xenón de serie, con luces diurnas integradas con cuatro focos LED.
+Con las llantas Cayenne de 18 pulgadas de serie en diseño multirradial, puede dar rienda suelta a la dinámica y, en caso necesario, también detenerla, gracias al potente sistema de frenos, efectivo incluso con plena carga y con una carga remolcada con freno de hasta 3.500 kg.
+También en el habitáculo: entusiasmo. Tanto a nivel visual como táctil. La consola central ascendente hacia delante y el volante deportivo multifunción acentúan el origen deportivo.
+Con los sistemas de asistencia opcionales puede seguir aumentando el confort y la seguridad según desee, por ejemplo, con el control de velocidad con regulador de distancia (ACC) incl. Porsche Active Safe (PAS), el asistente de cambio de carril, la advertencia de abandono de carril y el asistente de aparcamiento ParkAssistent con cámara de marcha atrás o Surround View.</item>
+    </string-array>
+</resources>
