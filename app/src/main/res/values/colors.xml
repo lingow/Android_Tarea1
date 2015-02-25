@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blackishtransparent">#cd0d0d0d</color>
+    <color name="toolbarcolor">#ff0aaf9f</color>
+    <color name="notificationbarcolor">#ff0a7e6f</color>
+
+</resources>

@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Tarea1</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Porsche</string>
+    <string name="drawer_open">Porsche</string>
+    <string name="drawer_close">Porsche</string>
     <string-array name="navigation_items_with_icons">
         <item>Notifications</item>
         <item>Settings</item>
     </string-array>
     <string-array name="navicons">
         <item>@drawable/ic_action_bell</item>
-        <item>@android:drawable/ic_menu_preferences</item>
+        <item>@drawable/ic_action_androidsettings</item>
     </string-array>
 </resources>

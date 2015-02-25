@@ -1,7 +1,7 @@
 package com.lingoware.tarea1;
 
+import android.app.Fragment;
 import android.content.res.TypedArray;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FragmentNavigationDrawer extends Fragment{
+public class FragmentNavigationDrawer extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class FragmentNavigationDrawer extends Fragment{
                 android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.car_names)
         ));
+
+        list.setOnItemClickListener((android.widget.AdapterView.OnItemClickListener) getActivity());
         ListView labeledIcons = (ListView) fragmentView.findViewById(R.id.navigation_icon_list_view);
         String[] labels = getResources().getStringArray(R.array.navigation_items_with_icons);
         TypedArray icons = getResources().obtainTypedArray(R.array.navicons);
@@ -47,6 +49,7 @@ public class FragmentNavigationDrawer extends Fragment{
                 this.getActivity(),
                 Arrays.asList(labels)
         ));
+        labeledIcons.setOnItemClickListener((android.widget.AdapterView.OnItemClickListener) getActivity());
         return fragmentView;
     }
 

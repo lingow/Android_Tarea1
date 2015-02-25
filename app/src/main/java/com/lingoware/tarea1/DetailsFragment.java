@@ -1,8 +1,9 @@
 package com.lingoware.tarea1;
 
+import android.app.Fragment;
 import android.content.res.TypedArray;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +33,7 @@ public class DetailsFragment extends Fragment {
         img = (ImageView) v.findViewById(R.id.content_image);
         rating = (RatingBar) v.findViewById(R.id.content_rating);
         txt = (TextView) v.findViewById(R.id.content_text);
-
+        name = (TextView) v.findViewById(R.id.car_name);
         return v;
     }
 
@@ -40,7 +41,7 @@ public class DetailsFragment extends Fragment {
         TypedArray arr = getResources().obtainTypedArray(R.array.car_images);
         img.setImageResource(arr.getResourceId(i,-1));
 
-        rating.setNumStars(getResources().getIntArray(R.array.car_ratings)[i]/2);
+        rating.setRating(getResources().getIntArray(R.array.car_ratings)[i]/2);
 
         txt.setText(getResources().getStringArray(R.array.car_text)[i]);
 
