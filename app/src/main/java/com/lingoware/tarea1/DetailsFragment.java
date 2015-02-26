@@ -2,7 +2,9 @@ package com.lingoware.tarea1;
 
 import android.app.Fragment;
 import android.content.res.TypedArray;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,6 +44,10 @@ public class DetailsFragment extends Fragment {
         img.setImageResource(arr.getResourceId(i,-1));
 
         rating.setRating(getResources().getIntArray(R.array.car_ratings)[i]/2);
+        LayerDrawable ld = (LayerDrawable)rating.getProgressDrawable();
+        ld.getDrawable(2).setColorFilter(getResources().getColor(R.color.starFull), PorterDuff.Mode.SRC_ATOP);
+        ld.getDrawable(1).setColorFilter(getResources().getColor(R.color.starStarPartial), PorterDuff.Mode.SRC_ATOP);
+        ld.getDrawable(0).setColorFilter(getResources().getColor(R.color.starStarNot), PorterDuff.Mode.SRC_ATOP);
 
         txt.setText(getResources().getStringArray(R.array.car_text)[i]);
 

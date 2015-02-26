@@ -3,5 +3,9 @@
     <color name="blackishtransparent">#cd0d0d0d</color>
     <color name="toolbarcolor">#ff0aaf9f</color>
     <color name="notificationbarcolor">#ff0a7e6f</color>
+    <color name="starFull">#ffffec1c</color>
+    <color name="starStarPartial">#ffa3a3a3</color>
+    <color name="starStarNot">#ffa3a3a3</color>
+
 
 </resources>
