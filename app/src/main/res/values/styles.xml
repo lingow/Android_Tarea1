@@ -4,6 +4,17 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:colorPrimaryDark">@color/notificationbarcolor</item>
+
+    </style>
+
+    <style name="toolbarstyle" parent="Theme.AppCompat">
+        <item name="android:theme">@style/subtheme</item>
+
+    </style>
+
+    <style name="subtheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:itemBackground">@color/background_floating_material_light</item>
     </style>
 
 </resources>

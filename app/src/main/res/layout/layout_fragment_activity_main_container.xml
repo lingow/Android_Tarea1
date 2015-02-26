@@ -26,7 +26,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/toolbarcolor"
-                    android:theme="@style/Theme.AppCompat.NoActionBar"/>
+                    android:theme="@style/toolbarstyle"/>
 
                 <ImageView
                     android:id="@+id/content_image"

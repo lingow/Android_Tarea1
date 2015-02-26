@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_material_light">
+    android:background="@color/background_floating_material_light">
 
     <ImageView
         android:layout_width="fill_parent"
@@ -20,6 +20,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
         android:id="@+id/navigation_list_view"/>
 
     <View
@@ -30,6 +32,8 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
         android:id="@+id/navigation_icon_list_view"/>
 
 </LinearLayout>

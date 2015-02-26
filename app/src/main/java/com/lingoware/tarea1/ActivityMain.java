@@ -1,11 +1,7 @@
 package com.lingoware.tarea1;
 
-import android.app.Activity;
 import android.app.FragmentTransaction;
-import android.graphics.drawable.ColorDrawable;
-import android.os.PersistableBundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,8 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import java.lang.reflect.Method;
 
@@ -72,7 +66,6 @@ public class ActivityMain extends ActionBarActivity implements AdapterView.OnIte
         // Set the drawer toggle as the DrawerListener
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-        //toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         mDrawerToggle.syncState();
 
     }
@@ -81,6 +74,11 @@ public class ActivityMain extends ActionBarActivity implements AdapterView.OnIte
     protected void onResume() {
         super.onResume();
         ((DetailsFragment)getFragmentManager().findFragmentById(R.id.container)).loadDetails(0);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        return super.onPrepareOptionsMenu(menu);
     }
 
     @Override
@@ -95,7 +93,7 @@ public class ActivityMain extends ActionBarActivity implements AdapterView.OnIte
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        // int id = item.getItemId();
 
         return super.onOptionsItemSelected(item);
     }
